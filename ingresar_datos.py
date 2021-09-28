@@ -1,3 +1,6 @@
+from typing import TextIO
+
+
 class ingresar_datos:
 
 
@@ -5,14 +8,23 @@ class ingresar_datos:
         cadena = input(texto)
         return cadena
     
-    def ingresar_numeros(texto):
-        
-        try:
-            numero = int(input(texto))
-            return numero
-        except ValueError:
-            print("!!!!!!ERROR SOLO SE PUEDEN INGRESAR NUMEROS¡¡¡¡¡¡")
-
+    def ingresar_numeros_enteros(texto):
+        while True:
+            try:
+                numero = int(input(texto))
+                return numero
+                break
+            except ValueError:
+                print("!!!!!!ERROR SOLO SE PUEDEN INGRESAR NUMEROS ENTEROS¡¡¡¡¡¡")
+    
+    def ingresar_numeros_decimales(texto):
+        while True:
+            try:
+                numero = float(input(texto))
+                return numero
+                break
+            except ValueError:
+                print("!!!!!!ERROR SOLO SE PUEDEN INGRESAR NUMEROS¡¡¡¡¡¡")
 
 
 
@@ -20,5 +32,5 @@ class ingresar_datos:
 if __name__ == '__main__':
     cadena = ingresar_datos.ingresar_letras("Ingrese una palabra")
     print(cadena)
-    numero = ingresar_datos.ingresar_numeros("Ingrese un numero")
+    numero = ingresar_datos.ingresar_numeros_enteros("Ingrese un numero")
     print(numero)

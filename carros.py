@@ -84,25 +84,12 @@ Propietario: {self.__propietario}
 
 
 
-# if __name__ == "__main__":
-#     arona = Carros("Seat","Arona","Style",2019,310000,1,"Age_True")
-#     x = arona.marca
-#     print(x)
-#     arona.marca = "ford"
+#if __name__ == "__main__":
+    # lista = []
+
+    # arona = Carros("Seat","Arona","Style",2019,310000,1,"Age_True")
+
     
-#     y = arona.marca
-#     print(y)
-#     #año1 = arona.año
-#     #print(año1)
-#     #arona.año = 1
-#     estado = arona.status
-#     print(estado)
-#     dueño1 = arona.propietario
-#     print(dueño1)
-#     arona.propietario = "erick"
-#     dueño2= arona.propietario
-#     print(dueño2)
-#     arona.mostrar_datos_del_vehiculo()
     
 
 
