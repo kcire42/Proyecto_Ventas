@@ -48,13 +48,13 @@ class ingresar_datos:
 
 
 
-if __name__ == '__main__':
-    cadena = ingresar_datos.ingresar_letras("Ingrese una palabra")
-    print(cadena)
-    numero = ingresar_datos.ingresar_numeros_enteros("Ingrese un numero")
-    print(numero)
-    numero_2 = ingresar_datos.ingresar_numeros_decimales("Ingresar numero con decimales: ")
-    print(numero_2)
-    binario = ingresar_datos.ingresar_1_o_0("Ingresar un 1 o 0")
-    print(binario)
+# if __name__ == '__main__':
+#     cadena = ingresar_datos.ingresar_letras("Ingrese una palabra")
+#     print(cadena)
+#     numero = ingresar_datos.ingresar_numeros_enteros("Ingrese un numero")
+#     print(numero)
+#     numero_2 = ingresar_datos.ingresar_numeros_decimales("Ingresar numero con decimales: ")
+#     print(numero_2)
+#     binario = ingresar_datos.ingresar_1_o_0("Ingresar un 1 o 0")
+#     print(binario)
 
