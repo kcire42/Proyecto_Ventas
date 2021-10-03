@@ -22,6 +22,8 @@ def main():
             elif menu == 3:
                 consultar_usuarios()
                 break
+            elif menu == 4:
+                exit()
             else:
                 raise ValueError("!!!!!!ERROR OPCION NO VALIDA¡¡¡¡¡¡")
         except ValueError as e:
@@ -41,6 +43,12 @@ def altas_de_usuarios():
     print(vehiculos)
     print("VEHICULO DADO DE ALTA")
     Carros.mostrar_datos_del_vehiculo(vehiculos[-1])
+    # with open("./archivos/vehiculos.txt","a") as f:
+    #     f.write(Carros.mostrar_datos_del_vehiculo(vehiculos[-1]))
+    #     f.write("\n")
+    # vehiculos.clear()
+
+    
     main()
 
     
@@ -48,11 +56,22 @@ def altas_de_usuarios():
   
 
 def baja_de_usuarios():
-    pass
+    i = 0
+    for vehiculo in vehiculos:
+        i +=1
+        print(f"Vehiculo numero: {i}")
+        Carros.mostrar_datos_del_vehiculo(vehiculo)
+    eliminar = ingresar_datos.ingresar_numeros_enteros("Ingrese el numero que deseas eliminar: ")
+    vehiculos.pop(eliminar-1)
+    main()
 
 def consultar_usuarios():
+    # with open("./archivos/vehiculos.txt","a") as f:
+    #     for line in f:
+    #         vehiculos.append(line)
     for vehiculo in vehiculos:
         Carros.mostrar_datos_del_vehiculo(vehiculo)
+    main()
 
 
 
